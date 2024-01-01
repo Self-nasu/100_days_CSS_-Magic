@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle {
+            background-color: blue;
+            height: 350px;
+            width: 350px;
+            border-radius: 50%;
+        }
+        body {
+            display: flex;
+            justify-self: center;
+            align-items: center;
+            height: 100%;
+        }
+        .object {
+            display: block;
+        }
+        .overlap {
+            position: relative;
+            left: -300px;
+            filter: drop-shadow(black -1px -1px 3px);
+        }
+    </style>
+</head>
+<body>
+    <div class="object">
+        <div class="circle"></div>
+    </div>
+    <div class="object overlap">
+        <img src="cat.png">
+    </div>
+</body>
+</html>
