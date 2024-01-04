@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+}
+.loader{
+    margin-left: 100px;
+}
+h1 {
+    color: white;
+}
+
+.loader {
+    width: 120px;
+    height: 120px;
+    border: 16px solid lightblue;
+    border-radius: 50%;
+    border-top: 16px solid yellow;
+    animation: loading 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+}
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
