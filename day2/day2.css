@@ -1,0 +1,25 @@
+body {
+    display: flex;
+}
+
+.shape {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: red;
+}
+.shape2 {
+    height: 0px;
+    width: 0px;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 300px solid red;
+}
+
+.shape3 {
+    height: 0px;
+    width: 0px;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-top: 300px solid red;
+}

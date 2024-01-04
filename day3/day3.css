@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(67, 67, 67);
+}
+h1 {
+    color: white;
+}
+.btn {
+    font-family: Verdana;
+    font-size: large;
+    padding: 5px;
+    border-radius: 15px;
+    justify-content: center;
+    display: flex;
+    width: 110px;
+    color: gray;
+    border: 2px solid gray;
+    transition: filter 0.4s linear;
+}
+.btn:hover {
+    color: white;
+    border-color: white;
+    filter: drop-shadow(0px 0px 1px yellow)
+    drop-shadow(0px 0px 2.5px yellow);
+    cursor: pointer;
+}
