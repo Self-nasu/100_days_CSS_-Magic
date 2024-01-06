@@ -1,0 +1,21 @@
+
+.btn {
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+    font-weight: 400;
+    font-family: Verdana;
+    padding: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 2px solid #ff9900;
+    border-radius: 15px;
+}
+.btn:hover {
+    animation: random 0.5s forwards linear;
+}
+@keyframes random {
+    100% {
+        box-shadow: inset 130px 0 0 #ff9900;
+    }
+}

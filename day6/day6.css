@@ -1,0 +1,143 @@
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+.hold {
+    height: 80px;
+    width: 80px;
+    background-color: transparent;
+}
+.tr1 {
+    height: 0px;
+    width: 0px;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 40px solid #ff9900;
+    position: relative;
+    top: -40px;
+    animation: tr1 1.3s linear infinite;
+    transition: border-bottom-color cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+@keyframes tr1 {
+    0% {
+        top: -40px;
+    }
+    25% {
+        border-bottom-color: rgb(153, 255, 0);
+    }
+    50% {
+        top : -30px;
+        border-bottom-color: blue;
+    }
+    75% {
+        border-bottom-color: rgb(255, 0, 166);
+    }
+    100% {
+        top: -40px;
+    }
+}
+.tr2 {
+    height: 0px;
+    width: 0px;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 40px solid #ff9900;
+    position: relative;
+    top: -120px;
+    transition: border-top-color cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation: tr2 1.3s linear infinite;
+}
+@keyframes tr2 {
+    0% {
+        top: -120px;
+    }
+    25% {
+        border-top-color: rgb(153, 255, 0);
+    }
+    50% {
+        top : -130px;
+        border-top-color: blue;
+    }
+    75% {
+        border-top-color: rgb(255, 0, 166);
+    }
+    100% {
+        top: -120px;
+    }
+}
+.tr3 {
+    height: 0px;
+    width: 0px;
+    border-bottom: 40px solid transparent;
+    border-top: 40px solid transparent;
+    border-left: 40px solid #ff9900;
+    position: relative;
+    top: -160px;
+    animation: tr3 1.3s linear infinite;
+    transition: border-left-color cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+@keyframes tr3 {
+    0% {
+        left: 0px;
+    }
+    25% {
+        border-left-color: rgb(153, 255, 0);
+    }
+    50% {
+        left : -10px;
+        border-left-color: blue;
+    }
+    75% {
+        border-left-color: rgb(255, 0, 166);
+    }
+    100% {
+        left: 0px;
+    }
+}
+.tr4 {
+    height: 0px;
+    width: 0px;
+    border-bottom: 40px solid transparent;
+    border-top: 40px solid transparent;
+    border-right: 40px solid #ff9900;
+    position: relative;
+    top: -240px;
+    left: 40px;
+    animation: tr4 1.3s linear infinite;
+    transition: border--color cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+@keyframes tr4 {
+    0% {
+        left: 40px;
+    }
+    25% {
+        border-right-color: rgb(153, 255, 0);
+    }
+    50% {
+        left: 50px;
+        border-right-color: blue;
+    }
+    75% {
+        border-right-color: rgb(255, 0, 166);
+    }
+    100% {
+        left: 40px;
+    }
+}
+.loader {
+    animation: final 3s linear infinite;
+    height: 80px;
+    width: 80px;
+}
+@keyframes final {
+    0%  {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
