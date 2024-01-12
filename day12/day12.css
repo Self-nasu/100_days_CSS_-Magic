@@ -1,0 +1,23 @@
+
+.btn {
+    background-color: #3d3d3d;
+    padding: 10px 11px;
+    border-radius: 50%;
+    border: 3px solid #3d3d3d;
+    transition: all 0.2s linear;
+    filter: drop-shadow(0px 0px 3px #14141496);
+}
+.btn i{
+    color: #252525;
+    transition: all 0.2s linear;
+}
+
+.btn:hover {
+    border: 3px solid yellow;
+    filter: drop-shadow(0px 0px 3.5px yellow);
+}
+.btn:hover i {
+    color: yellow;
+    filter: drop-shadow(0px 0px 1px yellow)
+    drop-shadow(0px 0px 2px yellow);
+}
