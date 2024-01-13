@@ -1,0 +1,66 @@
+.loader {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader::before {
+    content: "";
+    background: rgba(255, 255, 255, 0);
+    position: absolute;
+    width: 140px;
+    height: 55px;
+    z-index: 20;
+    border-top: none;
+    animation: anim2 1.3s infinite;
+    border-radius: 30%;
+}
+
+.loader div {
+    background: rgb(228, 228, 228);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    z-index: -1;
+    animation: anim 1.5s linear infinite;
+    animation-delay: calc(0.3s* var(--i));
+    transform: translateY(5px);
+    margin: 0.2em;
+}
+
+.loader div:nth-child(2) {
+    background: rgb(184, 219, 12);
+}
+
+.loader div:nth-child(3) {
+    background: rgb(254, 12, 76);
+}
+
+.loader div:nth-child(4) {
+    background: rgb(104, 80, 177);
+}
+
+@keyframes anim {
+
+    0%,
+    100% {
+        transform: translateY(5px);
+    }
+
+    50% {
+        transform: translateY(-65px);
+    }
+}
+
+@keyframes anim2 {
+
+    0%,
+    100% {
+        transform: rotate(-10deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+}
