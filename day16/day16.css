@@ -1,0 +1,34 @@
+.animate {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-top: 8px solid lightblue;
+    animation: spin 0.6s linear infinite;
+    animation-play-state: paused;
+}
+.animate:hover {
+    animation-play-state: running;
+    cursor: pointer;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+        border-top: 3px solid lightblue;
+        border-bottom: 3px solid lightblue;
+    }
+    25% {
+        border-color: blue;
+    }
+    50% {
+        border-top: 3px solid lightblue;
+        border-bottom: 3px solid lightblue;
+    }
+    75% {
+        border-color: green;
+    }
+    100% {
+        transform: rotate(360deg);
+        border-top: 3px solid lightblue;
+        border-bottom: 3px solid lightblue;
+    }
+}
