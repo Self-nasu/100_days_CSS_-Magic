@@ -1,0 +1,64 @@
+table {
+    border-spacing: 1;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+
+    * {
+        position: relative
+    }
+
+    td,
+    th {
+        padding-left: 8px
+    }
+
+    thead tr {
+        height: 60px;
+        background: #FFED86;
+        font-size: 16px;
+    }
+
+    tbody tr {
+        height: 48px;
+        border-bottom: 1px solid #E3F1D5;
+
+        &:last-child {
+            border: 0;
+        }
+    }
+
+    td,
+    th {
+        text-align: center;
+
+        &.l {
+            text-align: center
+        }
+
+        &.c {
+            text-align: center
+        }
+
+        &.r {
+            text-align: center
+        }
+    }
+}
+
+
+body {
+    background: #9BC86A;
+    font: 400 14px 'Calibri', 'Arial';
+    padding: 20px;
+}
+
+blockquote {
+    color: white;
+    text-align: center;
+}
