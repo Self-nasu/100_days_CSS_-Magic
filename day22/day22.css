@@ -25,15 +25,27 @@
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
+    border-radius: 15px;
+    filter: drop-shadow(0px 0px 4px rgba(92, 92, 92, 0.451));
 }
 
 .flip-box-front {
-    background-color: #bbb;
+    background-image: url("/day22/78551e233b058cc9bcb6382dc60b7637.jpg");
+    background-size: cover;
     color: black;
 }
 
 .flip-box-back {
-    background-color: dodgerblue;
+    background-image: url("/day22/shree-ram-hindu-god-lord-shree-ram_789916-4065.png");
+    background-size: cover;
     color: white;
     transform: rotateY(180deg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    align-items: last baseline;
+    display: flex;
+
+}
+h2 {
+    opacity: 60%;
 }
