@@ -1,0 +1,20 @@
+#check {
+    pointer-events: none;
+    margin-right: 6px;
+}
+
+label {
+    font-weight: 600;
+    color: #868686;
+    cursor: pointer;
+    transition: all 0.1s linear;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#check:checked {
+    accent-color: #4545fa;
+}
+
+#check:checked ~ label {
+    color: #4545fa;
+}
