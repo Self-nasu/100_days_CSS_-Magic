@@ -1,0 +1,10 @@
+p {
+    resize: both;
+    overflow: auto;
+    padding: 15px;
+    color: black;
+    background-color: yellow;
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px #a59898a3;
+    scroll-behavior: smooth;
+}
